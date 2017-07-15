@@ -1,0 +1,53 @@
+{
+  "name": "GitHub",
+  "scripts": {
+  },
+  "env": {
+    "GRAPHENEDB_BOLT_PASSWORD": {
+      "required": true
+    },
+    "GRAPHENEDB_BOLT_URL": {
+      "required": true
+    },
+    "GRAPHENEDB_BOLT_USER": {
+      "required": true
+    },
+    "GRAPHENEDB_URL": {
+      "required": true
+    },
+    "MEMCACHIER_PASSWORD": {
+      "required": true
+    },
+    "MEMCACHIER_SERVERS": {
+      "required": true
+    },
+    "MEMCACHIER_USERNAME": {
+      "required": true
+    },
+    "NEW_RELIC_LICENSE_KEY": {
+      "required": true
+    },
+    "NEW_RELIC_LOG": {
+      "required": true
+    },
+    "REDIS_URL": {
+      "required": true
+    },
+    "REDISTOGO_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "graphenedb",
+    "logentries",
+    "memcachier",
+    "newrelic",
+    "heroku-redis",
+    "redistogo"
+  ],
+  "buildpacks": [
+
+  ]
+}
